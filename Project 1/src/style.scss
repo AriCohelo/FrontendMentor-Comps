@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #f2e5d8;
-	color: hsl(30, 10%, 34%);
+	color: #4d0f0f;
 	font-size: 16px;
 	font-family: 'Outfit';
 }
@@ -28,9 +28,9 @@ body {
 	}
 
 	&__title {
-		color: hsl(24, 5%, 18%);
-		font-family: 'Young Serif';
-		font-size: $font-size-title;
+		color: #3c0a0a;
+		font-family: $font-family-title;
+		font-size: 2rem;
 		font-weight: 400;
 		padding: 20px 0 20px 0;
 	}
@@ -41,63 +41,65 @@ body {
 }
 
 .preparation {
-	padding: 20px;
+	padding: $padding-standard;
 	background-color: #fef7fc;
 
 	&__title {
-		color: hsl(332, 51%, 32%);
-		font-family: 'Outfit';
+		color: #541f34;
+		font-family: $font-family-standard;
 	}
 }
 
 .ingredients {
-	border-bottom: 1px solid hsl(30, 18%, 87%);
-	padding: 20px;
+	border-bottom: $border-standard;
+	padding: $padding-standard;
 
 	&__title {
-		font-family: 'young serif';
-		color: $title-font;
-		font-size: 1.5rem;
+		font-family: $font-family-title;
+		color: $font-color-title;
+		font-size: $font-size-title;
 	}
 }
 
 .instructions {
-	border-bottom: 1px solid hsl(30, 18%, 87%);
-	padding: 20px;
+	border-bottom: $border-standard;
+	padding: $padding-standard;
 
 	&__title {
-		font-family: 'young serif';
-		color: $title-font;
-		font-size: 1.5rem;
+		font-family: $font-family-title;
+		color: $font-color-title;
+		font-size: $font-size-title;
 	}
 }
 
 .nutrition {
-	padding: 20px;
+	padding: $padding-standard;
 
 	&__title {
-		font-family: 'young serif';
-		color: $title-font;
-		font-size: 1.5rem;
+		font-family: $font-family-title;
+		color: $font-color-title;
+		font-size: $font-size-title;
 	}
-
+	&__subtitle {
+		padding: $padding-standard;
+	}
 	&__item {
 		display: flex;
 
 		div {
 			padding: 10px;
 			width: 50%;
-			border-bottom: 1px solid gray;
+			border-bottom: $border-standard;
 		}
 
 		&__val {
-			color: $title-font;
+			color: $font-color-title;
 		}
 	}
 }
 
 li::marker {
-	color: $title-font;
+	color: $font-color-title;
 }
 
 ul li,
